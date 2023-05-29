@@ -1,0 +1,190 @@
+/* сброс силей браузера */
+html, body, div, span, object, iframe, h1, h2, h3,
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+	article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section{
+	display: block;
+}
+body{
+	line-height: 1.2;
+}
+ol{
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul{
+	padding-left: 1.4em;
+	list-style: square;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* конец кода сброса стилей браузера */
+body {
+    font-size: 150%;
+    font-family: math;
+    color: #4B0082;
+    background: #9932CC url(img/fonov.webp) repeat-x;
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: 5px solid #FFD700;
+	box-shadow: 2px 1px 5px #4B0082;
+}
+.main img{
+	float: left;
+}
+.main h1 {
+    color: white;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+	position: relative;
+	top: 18px;
+	left: 10px
+}
+.main h1 strong{
+    color: gold;
+    font-family: inherit;
+    font-size: 1.5em;
+}
+.main h2 {
+    font: bold 1.3em fangsong;
+    margin-top: 5px;
+	color: gold;
+}
+.logo {
+    position: right;
+    z-index: 100;
+    left: 0;
+}
+.mainmenu {
+	width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+	background: #9932CC;
+}
+
+.mainmenu ul{
+	margin: 0;
+	padding: 0;
+	height: 50px;
+}
+.mainmenu li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.mainmenu a{
+	color: white;
+	display: block;
+	height: 50px;
+	padding: 0 70px;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 110%;
+}
+.mainmenu li:last-of-type a {
+    border-bottom: 1px dashed #999;
+    margin-bottom: 10px;
+}
+.mainmenu a:hover {
+    font-weight: bold;
+    background-color: gold;
+    background-position: 3px 100%;
+}
+.left-video{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
+.right-video{
+	float: right;
+	margin: 20px 0 20px 20px;
+}
+.cola{
+	border-radius: 50%;
+	border: 5px solid #FFD700;
+	box-shadow: 2px 1px 5px #4B0082;
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+.buy{
+	float: right;
+	border: none;
+	background-color: gold;
+	-webkit-border-radius: 60px;
+	color: purple;
+	height: 50px;
+	width: 200px;
+	margin: 10px 100px 200px 10px;
+	cursor: pointer;
+}
+.zakaz{
+	width: 600px;
+	margin: 0 20px;
+}
+.zapol{
+	font-size: 24px;
+	margin-left: 540px;
+	color: gold;
+}
+.zakaz select, .zakaz input, .zakaz textarea{
+	width: 100%;
+	margin: 5px 0;
+	padding: 5px 15px;
+	margin-left: 300px;
+    padding: 10px 25px;
+    font-size: 1em;
+    color: black;
+    background: rgb(255, 215, 0);
+    background: linear-gradient(to bottom, rgba(255,255,255,.1) 40%, rgba(255,255,255,.5));
+    border-radius: 20px;
+    box-shadow: 0 0 4px gold;
+}
+.ofor{
+	text-align: center;
+}
+.spisok{
+	margin: 50px 0;
+}
+@keyframes glowing {
+0% { background-color: gold; box-shadow: 0 0 3px gold; }
+50% { background-color: purple; box-shadow: 0 0 10px gold; }
+100% { background-color: gold; box-shadow: 0 0 3px gold; }
+}
+.buy{
+    animation: glowing 1900ms infinite;
+}
+@-webkit-keyframes logo {
+    from {
+        -webkit-transform: rotate(0) scale(.5);
+        right: 120%;
+    }
+    50% {
+        -webkit-transform: rotate(-720deg) scale(1);
+        right: 0;
+    }
+    to {
+        -webkit-transform: rotate(0) scale(1);
+    }
+}
+.logo {
+    -webkit-animation: logo 3s;
+}
